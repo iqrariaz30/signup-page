@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Website</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+  form {
+    display: block;
+    margin: 0 auto;
+    padding: 1em;
+    border: 45px solid #644b61;
+    background-color: pink;
+    height: 300px;
+    width: 500px;
+    display: inline-table;
+  }
+  
+  input {
+    display: block;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border: 4px solid #ccc;
+  }
+  
+  input[type="submit"] {
+    float: right;
+    border: 3px solid purple;
+  }
+</style>
+</head>
+<body>
+  <h1>Login Page</h1>
+  <form action="/submit_form" method="post">
+    <input type="text" name="name" placeholder="Your name">
+    <input type="email" name="email" placeholder="Your email">
+    <input type="phone number" name="phone number" placeholder="Your phone number">
+    <input type="female/male" name="female/male" placeholder="female/male">
+    <input type="date of birth" name="date of birth" placeholder="date of birth">
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
